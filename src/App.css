@@ -9,7 +9,7 @@ body {
 a:link {
     text-decoration: none;
 }
-a p {
+p {
     color: #cdcac9;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
@@ -19,4 +19,28 @@ a p {
 }
 a p:hover{
     color:white;
+}
+
+.main-section {
+    background-color: #171616;
+}
+.search-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.under-search {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer {
+    background-color: #222426;
+}
+h3 {
+    color: #e9e9e9;
+}
+.footer li {
+    list-style-type: none;
+    color: #cdcac9;
 }
