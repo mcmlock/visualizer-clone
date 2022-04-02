@@ -1,0 +1,22 @@
+body {
+    background-color: #171616;
+    margin: 0;
+}
+
+.topNavBar {
+    background-color: #222426;
+}
+a:link {
+    text-decoration: none;
+}
+a p {
+    color: #cdcac9;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 14.0px;
+    letter-spacing: 1.1px;
+    margin: 0;
+}
+a p:hover{
+    color:white;
+}
