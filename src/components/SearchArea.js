@@ -5,7 +5,7 @@ import SearchBar from "./SearchBar";
 const SearchArea = () => {
     return (
         <div className="search-area">
-            <img height='100px' width='100px' src={greyNoiseImage} alt="grey-noise logo" />
+            <img className='main-img' src={greyNoiseImage} alt="grey-noise logo" />
             <SearchBar />
             <div className="under-search">
                 <p>Today's Top Anomalies:</p>

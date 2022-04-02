@@ -85,7 +85,12 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10% 15%;
+    padding-top: 8%;
+}
+.main-img {
+    height: 220.0px;
+    width: 380.0px;
+    margin-bottom: 80.0px;
 }
 .under-search {
     display: flex;
