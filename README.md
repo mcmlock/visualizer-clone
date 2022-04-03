@@ -1,1 +1,1 @@
-# This website is a clone of the GreyNoise Visualizer. Speficfically 2 pages: the home screen and the a screen for when the user clicks on the "Today" button. This will all be static information, but I'm using this as a chance to practice my design skills
+# This website is a clone of the GreyNoise Visualizer's landing page.

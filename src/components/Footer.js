@@ -4,7 +4,7 @@ import { faLinkedinIn, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
     return (
-        <div className='footer'>
+        <div id='footer' className='footer'>
             <div className='footer-menu'>
                 <div className='footer-menu-col'>
                     <h6>VISUALIZER</h6>
