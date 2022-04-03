@@ -108,6 +108,9 @@ p {
 .searchBar::placeholder {
     color: #bfbfbf;
 }
+.explore-btn {
+    color: #cdcac9;
+}
 .under-search {
     display: flex;
     justify-content: space-between;
@@ -123,12 +126,77 @@ p {
     background-color: #222426;
     display: flex;
     flex-direction: column;
-    padding-top: 5.0%;
+    padding-top: 4.0%;
+    padding-bottom: 3.0%;
 }
-h3 {
+.footer-menu {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+.footer-menu-col {
+    display: flex;
+    flex-direction: column;
+    margin: 0 35.0px;
+}
+.footer-menu-col ul {
+    padding-left: 0;
+}
+h6 {
     color: #e9e9e9;
+    padding-bottom: 10.0px;
 }
-.footer li {
+.info-div {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.icon-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10.0px 0 15.0px 0;
+}
+.social-icon {
+    color: #cdcac9;
+    padding: 0 10.0px;
+    height: 20.0px;
+    width: 20.0px;
+}
+.social-icon:hover {
+    color: white;
+}
+.footer a {
+    padding-top: 0;
+    padding-left: 0;
+}
+.footer a h6 {
     list-style-type: none;
     color: #cdcac9;
+    margin: 0;
+}
+.footer a p {
+    list-style-type: none;
+    color: #cdcac9;
+    margin: 0;
+    font-size: 11.0px;
+    font-weight: 600;
+}
+.footer a p:hover, .footer a h6:hover {
+    color: white;
+}
+.bottommostRow {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10.0px
+}
+.bottommostRow a {
+    padding: 0;
+}
+.bottommostRow a p {
+    font-size: 9.0px;
+    padding: 0 3px;
+}
+.border-right-active {
+    border-right: 1.0px solid #959595;
 }

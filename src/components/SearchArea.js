@@ -9,7 +9,7 @@ const SearchArea = () => {
             <SearchBar />
             <div className="under-search">
                 <p><em>Today's Top Anomalies:</em></p>
-                <a style={{padding: 0}}><p style={{color: "#bfbfbf"}}>&gt; Explore Trends</p></a>
+                <a style={{padding: 0}} href="../index.js"><p className="explore-btn">&gt; Explore Trends</p></a>
             </div>
         </div>
     );

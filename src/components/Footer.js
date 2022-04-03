@@ -5,51 +5,46 @@ import { faLinkedinIn, faTwitter } from '@fortawesome/free-brands-svg-icons';
 const Footer = () => {
     return (
         <div className='footer'>
-            <div style={{display: 'flex', flexDirection: 'row'}}>
-                <div style={{display: 'flex', flexDirection: 'column'}}>
-                    <h3>VISUALIZER</h3>
-                    <ul>
-                        <li>Today</li>
-                        <li>Tags</li>
-                        <li>Stats</li>
-                        <li>Pulse</li>
-                    </ul>
+            <div className='footer-menu'>
+                <div className='footer-menu-col'>
+                    <h6>VISUALIZER</h6>
+                    <a href="../index.js"><p>Today</p></a>
+                    <a href="../index.js"><p>Tags</p></a>
+                    <a href="../index.js"><p>Stats</p></a>
+                    <a href="../index.js"><p>Pulse</p></a>
+
                 </div>
-                <div style={{display: 'flex', flexDirection: 'column'}}>
-                    <h3>RESOURCES</h3>
-                    <ul>
-                        <li>Documentation</li>
-                        <li>Integrations</li>
-                        <li>Service Status</li>
-                    </ul>
+                <div className='footer-menu-col'>
+                    <h6>RESOURCES</h6>
+                    <a href="../index.js"><p>Documentation</p></a>
+                    <a href="../index.js"><p>Integrations</p></a>
+                    <a href="../index.js"><p>Service Status</p></a>
                 </div>
-                <div style={{display: 'flex', flexDirection: 'column'}}>
-                    <h3>COMPANY</h3>
-                    <ul>
-                        <li>Careers</li>
-                    </ul>
+                <div className='footer-menu-col'>
+                    <h6>COMPANY</h6>
+                    <a href="../index.js"><p>Careers</p></a>
                 </div>
-                <div style={{display: 'flex', flexDirection: 'column'}}>
-                    <h3>BLOCK</h3>
+                <div className='footer-menu-col'>
+                    <a href="../index.js"><h6>Blog</h6></a>
                 </div>
-                <div style={{display: 'flex', flexDirection: 'column'}}>
-                    <h3>PRICING</h3>
+                <div className='footer-menu-col'>
+                    <a href="../index.js"><h6>Pricing</h6></a>
                 </div>
             </div>
-            <div>
-                <div>
-                    <FontAwesomeIcon icon={faTwitter} color="white" />
-                    <FontAwesomeIcon icon={faLinkedinIn} color="white" />
+            <div className='info-div'>
+                <div className='icon-row'>
+                <a href="../index.js"><FontAwesomeIcon icon={faTwitter} className='social-icon' /></a>
+                <a href="../index.js"><FontAwesomeIcon icon={faLinkedinIn} className='social-icon' /></a>
                 </div>
-                <p>Copyright © 2021 GreyNoise</p>
-                <ul>
-                    <li>Terms</li>
-                    <li>Privacy</li>
-                    <li>Cookie</li>
-                    <li>Patents</li>
-                </ul>
+                <p style={{fontSize: 9.0, margin: 'auto'}}>Copyright © 2021 GreyNoise</p>
+                <div className='bottommostRow'>
+                    <a href="../index.js"><p className='border-right-active'>Terms</p></a>
+                    <a href="../index.js"><p className='border-right-active'>Privacy</p></a>
+                    <a href="../index.js"><p className='border-right-active'>Cookie</p></a>
+                    <a href="../index.js"><p>Patent</p></a>
+                </div>
             </div>
-        </div>
+        </div >
     );
 }
 
