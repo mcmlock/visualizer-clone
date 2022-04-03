@@ -30,7 +30,7 @@ const Footer = () => {
                     <a href="../index.js"><h6>Pricing</h6></a>
                 </div>
             </div>
-            <hr className='footer-hr' style={{color: 'white', margin: '20.0px auto 20.0px auto', height: '0.5px', width: 650.0}}/>
+            <hr className='footer-hr' style={{color: 'white', margin: '20.0px auto 20.0px auto', height: '0.5px'}} />
             <div className='info-div'>
                 <div className='icon-row'>
                 <a href="../index.js"><FontAwesomeIcon icon={faTwitter} className='social-icon' /></a>
