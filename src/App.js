@@ -10,7 +10,7 @@ const App = () => {
         <div className='app'>
             <TopNavBar />
             <MainSection />
-            <hr style={{color: '#6b6a6a', margin: 0}} />
+            <hr style={{color: '#6b6a6a', margin: 0, height: '0.3px'}} />
             <Footer />
         </div>
     )

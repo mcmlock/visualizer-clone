@@ -8,8 +8,8 @@ const SearchArea = () => {
             <img className='main-img' src={greyNoiseImage} alt="grey-noise logo" />
             <SearchBar />
             <div className="under-search">
-                <p>Today's Top Anomalies:</p>
-                <a><p>&gt; Explore Trends</p></a>
+                <p><em>Today's Top Anomalies:</em></p>
+                <a style={{padding: 0}}><p style={{color: "#bfbfbf"}}>&gt; Explore Trends</p></a>
             </div>
         </div>
     );
