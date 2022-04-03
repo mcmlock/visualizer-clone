@@ -14,10 +14,10 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-left: 5%;
+    margin-left: 8%;
 }
 .topNavBarRight {
-    margin-right: 5%;
+    margin-right: 8%;
     height: 10.0px;
     width: 10.0px;
     border-radius: 100%;
@@ -41,42 +41,19 @@ p {
     letter-spacing: 1.1px;
 }
 
-.bottomNavBar {
+.bottomNavBarDesktop {
+    display: none;
+}
+.bottomNavBarMobile {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15.0px 0;
+    justify-content: flex-end;
+    padding-top: 20.0px;
+    margin-right: 8%;
 }
-.bottomNavBarLeft {
-    display: flex;
-    flex-direction: row;
-    margin-left: 4%;
-}
-.bottomNavBarRight {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-right: 4%;
-}
-.signUpButton {
-    display: flex;
-    align-items: center;
-    background-color: #222426;
-    border: 1.0px solid #1ec072;
-    margin-left: 10.0px;
-    padding: 10.0px 5.0px;
-}
-.signUpButton:hover {
-    background-color: white;
-}
-.signUpButton p {
+.expand-btn {
     color: white;
 }
-.signUpButton:hover p {
-    color: black;
-}
-
 
 .main-section {
     background-color: #171616;
@@ -85,8 +62,8 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 8%;
-    padding-bottom: 8%;
+    padding-top: 10%;
+    padding-bottom: 10%;
 }
 .main-img {
     height: 220.0px;
@@ -97,7 +74,7 @@ p {
     color: #bfbfbf;
     background-color: #222426;
     border: 1.0px solid #565555;
-    width: 800.0px;
+    width: 500.0px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20.0px;
@@ -114,24 +91,27 @@ p {
 .under-search {
     display: flex;
     justify-content: space-between;
-    width: 800.0px;
+    width: 500.0px;
 }
 .under-search p {
     font-family: 'PT Mono', monospace;
     font-size: 12.0px;
     color: #959595;
+    text-align: end;
 }
 
 .footer {
     background-color: #222426;
     display: flex;
     flex-direction: column;
-    padding-top: 4.0%;
-    padding-bottom: 3.0%;
+    padding-top: 6.0%;
+    padding-bottom: 6.0%;
 }
 .footer-menu {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    width: 750.0px;
     margin: auto;
 }
 .footer-menu-col {
@@ -150,12 +130,14 @@ h6 {
     display: flex;
     flex-direction: column;
     margin: auto;
+    width: 350.0px;
 }
 .icon-row {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    padding: 10.0px 0 15.0px 0;
+    justify-content: space-between;
+    padding: 25.0px 0 15.0px 0;
+    order: 2;
 }
 .social-icon {
     color: #cdcac9;
@@ -185,18 +167,105 @@ h6 {
 .footer a p:hover, .footer a h6:hover {
     color: white;
 }
+.copyright-p {
+    font-size: 9.0px;
+    margin: auto;
+    order: 3;
+}
 .bottommostRow {
     display: flex;
     flex-direction: row;
-    padding-top: 10.0px
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10.0px;
+    order: 1;
 }
 .bottommostRow a {
+    height: 16.0px;
     padding: 0;
 }
 .bottommostRow a p {
     font-size: 9.0px;
     padding: 0 3px;
 }
-.border-right-active {
-    border-right: 1.0px solid #959595;
+.vertical-line {
+    border-left: 1px solid #565555;
+    height: 10px;
+    margin: 0;
+}
+
+@media (min-width: 992.0px) {
+    .topNavBarLeft {
+        margin-left: 5%;
+    }
+    .topNavBarRight {
+        margin-right: 5%;
+    }
+
+    .bottomNavBarMobile {
+        display: none;
+    }
+    .bottomNavBarDesktop {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15.0px 0;
+    }
+    .bottomNavBarLeft {
+        display: flex;
+        flex-direction: row;
+        margin-left: 4%;
+    }
+    .bottomNavBarRight {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-right: 4%;
+    }
+    .signUpButton {
+        display: flex;
+        align-items: center;
+        background-color: #222426;
+        border: 1.0px solid #1ec072;
+        margin-left: 10.0px;
+        padding: 10.0px 5.0px;
+    }
+    .signUpButton:hover {
+        background-color: white;
+    }
+    .signUpButton p {
+        color: white;
+    }
+    .signUpButton:hover p {
+        color: black;
+    }
+
+    .searchBar {
+        width: 800.0px;
+    }
+    .under-search {
+        width: 800.0px;
+    }
+    .trends-break {
+        display: none;
+    }
+
+    .footer-hr {
+        display: none;
+    }
+    .icon-row {
+        order: 1;
+        justify-content: center;
+    }
+    .copyright-p {
+        order: 2;
+    }
+    .bottommostRow {
+        order: 3;
+        justify-content: center;
+    }
+    .extra-words {
+        display: none;
+    }
 }
